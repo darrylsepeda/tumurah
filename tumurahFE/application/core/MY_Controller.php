@@ -10,4 +10,10 @@ class MY_Controller extends CI_Controller {
 	{
 		return base_url()."../tumurahBE/assets/uploads/files/";
 	}
+
+	public function category()
+	{
+		$data['cat'] = $this->tumurah_model->cat_show();
+		return $data['cat'];
+	}
 }

@@ -15,5 +15,13 @@ class Tumurah_model extends CI_Model {
         $query = $this->db->query("CALL `product_show` ()");
         return $query;
     }
-
+    public function cat_show()
+    {
+		// storprocedure 
+		/* 
+			SELECT * FROM product_category
+		*/
+        $query = $this->db->query("CALL `category_list` ()");
+        return $query;
+    }
 }
