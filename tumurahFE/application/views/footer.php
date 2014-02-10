@@ -3,7 +3,7 @@
 				<div class="detilfooter">
 					<a href="#">FAQ</a><br/>
 					<a href="#">Contact Us</a><br/>
-					<a href="#">Payment Confirmation</a><br/>
+					<a href="payment">Payment Confirm</a><br/>
 					<a href="#">Delivery Details</a><br/>
 					<a href="#">Unsubscribe</a><br/>
 				</div>
