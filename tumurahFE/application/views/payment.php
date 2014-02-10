@@ -6,11 +6,11 @@
 		<?php $this->load->view('header');?>
 		<div id="wrapper">
 			<div id="accordion">
-              <h3>Payment Confirm</h3>
+              <h3><div id="pmtcfm">Payment Confirm</div></h3>
               <div>
                 <p></p>
               </div>
-              <h3>Delivery Details</h3>
+              <h3><div id="dlydtl">Delivery Details</div></h3>
               <div>
                 <p></p>
               </div>

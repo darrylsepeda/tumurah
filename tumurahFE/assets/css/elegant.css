@@ -33,7 +33,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c19e67', end
 #logo{ /*background:#fff;border:1px gray dashed;*/height:100%;width:150px;display:table-cell;text-align:center;font-weight:bold;color:gray;}
 #menubar{/*background:#369;border:1px black dashed;*/height:100%;width:100px;display:table-cell;border-left:1px black solid;padding:15px 15px; }
 #src{/*background:#369;border:1px black dashed;*/height:100%;width:400px;display:table-cell;border-left:1px black solid;padding:15px 15px; }
-#cart{/*background:#369;border:1px black dashed;*/height:100%;width:200px;display:table-cell;border-left:1px black solid;padding:15px 15px; }
+
 
 #services{display:table-cell;width:120px;height:100%;padding:0 15px;/*border:1px red solid;*/}
 #aboutus{display:table-cell;width:120px;height:100%;padding:0 15px;/*border:1px green solid;*/}
@@ -48,8 +48,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c19e67', end
 #menubar, #cart{cursor:pointer;}
 #menubar:hover #popup1{z-index:1000;width:98%;height:200px;left:1%;top:13%;background:silver;position:absolute;border:1px white dotted;-webkit-animation: fade-in .4s, move-up .4s;-moz-animation: fade-in .4s, move-up .4s;-ms-animation: fade-in .4s, move-up .4s;display:block;border-radius:2px;box-shadow:0 2px 2px gray;}
 
+
 .detilfooter{font-size:12pt;margin:5px 0;}
-#cart:hover #popup2{z-index:1000;width:98%;height:100px;left:1%;top:13%;background:silver;position:absolute;border:1px white dotted;-webkit-animation: fade-in .4s, move-up .4s;-moz-animation: fade-in .4s, move-up .4s;-ms-animation: fade-in .4s, move-up .4s;display:block;}
+#cart{/*background:#369;border:1px black dashed;*/height:100%;width:200px;display:table-cell;border-left:1px black solid;padding:15px 15px; }
+#cart:hover #popup2{z-index:1000;width:98%;height:500px;left:1%;top:13%;background:silver;position:absolute;border:1px white dotted;-webkit-animation: fade-in .4s, move-up .4s;-moz-animation: fade-in .4s, move-up .4s;-ms-animation: fade-in .4s, move-up .4s;display:block;}
+#cart table{
+	width:100%;margin:auto;border:1px black solid;
+}
 
 ul.prod{list-style:none;margin:auto;}
 ul.prod li{float:left;margin:15px auto 15px 15px;}

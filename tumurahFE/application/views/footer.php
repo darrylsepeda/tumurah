@@ -1,16 +1,16 @@
 <footer>
 			<div id="services">Services
 				<div class="detilfooter">
-					<a href="#">FAQ</a><br/>
-					<a href="#">Contact Us</a><br/>
-					<a href="payment">Payment Confirm</a><br/>
-					<a href="#">Delivery Details</a><br/>
+					<a href="faq">FAQ</a><br/>
+					<a href="contact">Contact Us</a><br/>
+					<a href="payment#pmtcfm">Payment Confirm</a><br/>
+					<a href="payment#dlydtl">Delivery Details</a><br/>
 					<a href="#">Unsubscribe</a><br/>
 				</div>
 			</div>
 			<div id="aboutus">About Us
 				<div class="detilfooter">
-					<a href="#">About Tumurah</a><br/>
+					<a href="about">About Tumurah</a><br/>
 					<a href="#">Careers</a><br/>
 					<a href="#">Wholesale</a><br/>
 					<a href="#">Return Policy</a><br/>
