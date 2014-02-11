@@ -37,7 +37,7 @@
 			<div id="cart">cart
 				<div class="popup" id="popup2">
 					<table>
-                    	<th>
+                    	<tr>
                         	<td>Image</td>
                             <td>Merk</td>
                             <td>Brand</td>
@@ -46,7 +46,7 @@
                             <td>Qty</td>
                             <td>Sub Total</td>
                             <td>Action</td>
-                        </th>
+                        </tr>
                         <tr>
                         	<td>Image</td>
                             <td>Merk</td>
@@ -58,12 +58,12 @@
                             <td>Action</td>
                         </tr>
                         <tr>
-                        	<td colspan="6"></td>
+                        	<td colspan="6">TOTAL</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
-                        	<td colspan="7"></td>
+                        	<td colspan="7">TEST</td>
                             <td></td>
                         </tr>
                     </table>

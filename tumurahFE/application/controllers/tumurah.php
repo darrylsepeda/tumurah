@@ -4,11 +4,27 @@ class Tumurah extends MY_Controller {
 	public function index()
 	{
 		$data['prod'] = $this->tumurah_model->product_show();
-		$this->loadPage("index2",$data);
+		$this->loadPage("page/index",$data);
 	}
 	
 	public function about()
 	{
 		$this->loadPage('page/aboutus');
+	}
+	public function payment()
+	{
+		$this->loadPage('page/payment');
+	}
+	public function product()
+	{
+		$this->loadPage('page/productview');
+	}
+	public function faq()
+	{
+		$this->loadPage('page/faq');
+	}
+	public function contact()
+	{
+		$this->loadPage('page/contact');
 	}
 }

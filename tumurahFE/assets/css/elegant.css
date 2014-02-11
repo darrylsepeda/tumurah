@@ -52,7 +52,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c19e67', end
 .detilfooter{font-size:12pt;margin:5px 0;}
 #cart{/*background:#369;border:1px black dashed;*/height:100%;width:200px;display:table-cell;border-left:1px black solid;padding:15px 15px; }
 #cart:hover #popup2{z-index:1000;width:98%;height:500px;left:1%;top:13%;background:silver;position:absolute;border:1px white dotted;-webkit-animation: fade-in .4s, move-up .4s;-moz-animation: fade-in .4s, move-up .4s;-ms-animation: fade-in .4s, move-up .4s;display:block;}
-#cart table{
+#cart table, #cart td{
 	width:100%;margin:auto;border:1px black solid;
 }
 

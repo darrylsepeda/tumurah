@@ -1,10 +1,10 @@
         <footer>
             <div id="services">Services
                 <div class="detilfooter">
-                    <a href="faq">FAQ</a><br/>
-                    <a href="contact">Contact Us</a><br/>
-                    <a href="payment#pmtcfm">Payment Confirm</a><br/>
-                    <a href="payment#dlydtl">Delivery Details</a><br/>
+                    <a href="<?=site_url("tumurah/faq")?>">FAQ</a><br/>
+                    <a href="<?=site_url("tumurah/contact")?>">Contact Us</a><br/>
+                    <a href="<?=site_url("tumurah/payment")?>">Payment Confirm</a><br/>
+                    <a href="<?=site_url("tumurah/payment")?>">Delivery Details</a><br/>
                     <a href="#">Unsubscribe</a><br/>
                 </div>
             </div>
