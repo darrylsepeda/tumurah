@@ -13,7 +13,20 @@ class MY_Controller extends CI_Controller {
 
 	public function category()
 	{
-		$data['cat'] = $this->tumurah_model->cat_show();
+		$cat = $this->tumurah_model->cat_show();
+        foreach($cat->result() as $eachcat)
+        {
+            $data['cat'][$eachcat->product_category_id] = $eachcat->description;
+        }
 		return $data['cat'];
+	}
+	
+	public function loadPage($page,$data=NULL) 
+	{
+        $data['cat'] = $this->category();
+		$data['base_img'] = $this->base_img();
+		$this->load->view("component/header.php",$data);
+		$this->load->view($page,$data);
+		$this->load->view("component/footer.php",$data);
 	}
 }

@@ -1,7 +1,7 @@
 <html>
 	<head>
-        <link rel="stylesheet" type="text/css" href="<?=base_url();?>../../assets/css/elegant.css" />
-        <link rel="stylesheet" type="text/css" href="<?=base_url();?>../../assets/css/jquery.jscrollpane.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/elegant.css" />
+        <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/jquery.jscrollpane.css" media="all" />
 	</head>
 	<body>
     	
@@ -32,17 +32,7 @@
 			</div>
 			<div id="src">
 				<input text="text" placeholder="Search..." name="src" id="src" style="vertical-align:middle;width:50%;"/>
-				<select style="display:inline;">
-					<option>category</option>
-					<?php 
-						//category();
-						//foreach($cat->result() as $eachCat){
-					?>
-							<!--<option><?=$eachCat->description;?></option>-->
-					<?php			
-						//} BAGIAN SINI ERROR
-					?>
-				</select>
+				<?=@$cat ? form_dropdown('category',@$cat) : form_dropdown()?>
 			</div>
 			<div id="cart">cart
 				<div class="popup" id="popup2">

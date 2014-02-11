@@ -10,7 +10,7 @@
             </div>
             <div id="aboutus">About Us
                 <div class="detilfooter">
-                    <a href="<?=base_url();?>/tumurah/about">About Tumurah</a><br/>
+                    <a href="<?=site_url("tumurah/about")?>">About Tumurah</a><br/>
                     <a href="#">Careers</a><br/>
                     <a href="#">Wholesale</a><br/>
                     <a href="#">Return Policy</a><br/>
@@ -20,7 +20,7 @@
             </div>
             <div id="kolom">
                 <div id="delivopt">Delivery Options<br/>
-                    <img src="images/jne.jpg" style="width:50px;"/>
+                    <img src="<?=base_url()?>assets/images/jne.jpg" style="width:50px;"/>
                 </div>
                 <div id="payopt">Payment Options</div>
             </div>
