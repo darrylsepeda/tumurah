@@ -56,6 +56,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c19e67', end
 	width:100%;margin:auto;border:1px black solid;
 }
 
+#shipInfo{margin:auto;width:400px;}
+#shipInfo input, #shipInfo select, #shipInfo textarea{width:308px;resize:none;}
+#shipInfo input[type=submit]{float:right;}
+
 ul.prod{list-style:none;margin:auto;}
 ul.prod li{float:left;margin:15px auto 15px 15px;}
 ul.prod table{width:200px;height:300px;padding:10px 20px;background:white;border-radius:4px;}

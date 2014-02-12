@@ -13,7 +13,8 @@ class Tumurah extends MY_Controller {
 	}
 	public function payment()
 	{
-		$this->loadPage('page/payment');
+		$data['kota'] = $this->tumurah_model->city_show();
+		$this->loadPage('page/payment', $data);
 	}
 	public function product()
 	{

@@ -4,9 +4,10 @@
         <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/jquery.jscrollpane.css" media="all" />
 	</head>
 	<body>
-    	
+    	<div style="float:right;margin:auto 40px auto auto;"><a href="#">Sign In</a> | <a href="#">Register</a></div>
     	<header>	
-			<div id="logo"><a href="product">logo</a></div>
+        	
+			<div id="logo"><a href="<?=site_url("tumurah/index");?>">logo</a></div>
 			<div id="menubar">Shop by
 				<div class="popup" id="popup1">
                         <!--<div id="myScroller">

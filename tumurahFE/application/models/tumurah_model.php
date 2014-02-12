@@ -30,4 +30,8 @@ class Tumurah_model extends CI_Model {
         $query = $this->db->get("product_category");
         return $query;
     }
+	public function city_show(){
+		$query = $this->db->get("city");
+        return $query;
+	}
 }
