@@ -86,6 +86,9 @@
                 <li><a href="<?=site_url('tumurah_cms/product_comment')?>">Product Comment</a></li>
                 <li><a href="<?=site_url('tumurah_cms/product_rating')?>">Product Rating</a></li>
                 <li class="divider"></li>
+                <li><a href="<?=site_url('upload/dld_pdt')?>">Download Product Excel</a></li>
+                <li><a href="<?=site_url('upload/dld_pdt')?>">Upload Product Excel</a></li>
+                <li class="divider"></li>
                 <li class="nav-header">Order Management</li>
                 <li><a href="<?=site_url('tumurah_cms/order')?>">Order</a></li>
               </ul>

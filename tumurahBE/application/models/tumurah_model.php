@@ -2,10 +2,18 @@
 
 class Tumurah_model extends CI_Model {
 
-    public function product_show()
+    public function product_manufacture()
     {
-        $query = $this->db->query("CALL `product_show` ()");
-        return $query;
+        return $this->db->get("product_manufacture");
     }
-
+    
+    public function product_category()
+    {
+        return $this->db->get("product_category");
+    }
+    
+    public function product_status()
+    {
+        return $this->db->get("product_status");
+    }
 }

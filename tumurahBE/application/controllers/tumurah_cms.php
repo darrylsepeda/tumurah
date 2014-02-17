@@ -4,13 +4,14 @@ class Tumurah_cms extends CI_Controller {
 	
 	public function index()
 	{
-	   $data['title'] = "Welcome to `Tumurah` Content Management System";
-       $this->load->view('backend/index',$data);
+	   //$data['title'] = "Welcome to `Tumurah` Content Management System";
+       $this->load->view('index',$data=NULL);
 	}
 
-	public function _example_output($output = null)
+	public function _example_output($output = NULL,$title = NULL)
 	{
-        $this->load->view('backend/index',$output);
+        echo "<h2>$title</h2><hr/>";
+        $this->load->view('example',$output);
 	}
     
     public function product(){
@@ -29,7 +30,7 @@ class Tumurah_cms extends CI_Controller {
             $crud->required_fields('product_manufacture_id','product_category_id','product_status_id','name','description','stock_level','weight_kg','price_current','currency');
 
 			$output = $crud->render();
-            $this->_example_output($output);
+            $this->_example_output($output,'PRODUCT');
             
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
@@ -52,7 +53,7 @@ class Tumurah_cms extends CI_Controller {
             $crud->required_fields('product_id','location');
 
 			$output = $crud->render();
-            $this->_example_output($output);
+            $this->_example_output($output,'PRODUCT IMAGE');
             
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
@@ -69,7 +70,7 @@ class Tumurah_cms extends CI_Controller {
             $crud->required_fields('description');
 
 			$output = $crud->render();
-            $this->_example_output($output);
+            $this->_example_output($output,'PRODUCT CATEGORY');
             
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
@@ -86,7 +87,7 @@ class Tumurah_cms extends CI_Controller {
             $crud->required_fields('description');
 
 			$output = $crud->render();
-            $this->_example_output($output);
+            $this->_example_output($output,'PRODUCT MANUFACTURE');
             
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
@@ -106,7 +107,7 @@ class Tumurah_cms extends CI_Controller {
             $crud->set_relation('product_id','product','{product_id} - {name}');
 
 			$output = $crud->render();
-            $this->_example_output($output);
+            $this->_example_output($output,'PRODUCT RATING');
             
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
@@ -126,7 +127,7 @@ class Tumurah_cms extends CI_Controller {
             $crud->set_relation('product_id','product','{product_id} - {name}');
 
 			$output = $crud->render();
-            $this->_example_output($output);
+            $this->_example_output($output,'PRODUCT COMMENT');
             
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
@@ -150,7 +151,7 @@ class Tumurah_cms extends CI_Controller {
             $crud->required_fields('user_status_id','first_name','email','password','is_subscribed','date_created','date_last_login');
 
 			$output = $crud->render();
-            $this->_example_output($output);
+            $this->_example_output($output,'USERS');
             
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
@@ -176,7 +177,7 @@ class Tumurah_cms extends CI_Controller {
             $crud->required_fields('user_id');
 
 			$output = $crud->render();
-            $this->_example_output($output);
+            $this->_example_output($output,'CUSTOMER');
             
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
@@ -196,7 +197,7 @@ class Tumurah_cms extends CI_Controller {
             $crud->required_fields('user_id','staff_level_id');
 
 			$output = $crud->render();
-            $this->_example_output($output);
+            $this->_example_output($output,'STAFF');
             
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
@@ -219,7 +220,7 @@ class Tumurah_cms extends CI_Controller {
             $crud->unset_delete();
 
 			$output = $crud->render();
-            $this->_example_output($output);
+            $this->_example_output($output,'ORDER');
             
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
@@ -242,7 +243,7 @@ class Tumurah_cms extends CI_Controller {
             $crud->unset_delete();
 
 			$output = $crud->render();
-            $this->_example_output($output);
+            $this->_example_output($output,'INVOICE');
             
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
