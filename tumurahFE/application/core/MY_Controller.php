@@ -25,8 +25,8 @@ class MY_Controller extends CI_Controller {
 	{
         $data['cat'] = $this->category();
 		$data['base_img'] = $this->base_img();
-		$this->load->view("component/header.php",$data);
+		$this->load->view("component/head.php",$data);
 		$this->load->view($page,$data);
-		$this->load->view("component/footer.php",$data);
+		$this->load->view("component/foot.php",$data);
 	}
 }

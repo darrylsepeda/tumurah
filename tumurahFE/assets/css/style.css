@@ -1,71 +1,82 @@
-html{background: #c19e67; /* Old browsers */
-background: -moz-linear-gradient(top,  #c19e67 0%, #3d1c00 35%, #f2f2f2 58%, #b68d4c 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c19e67), color-stop(35%,#3d1c00), color-stop(58%,#f2f2f2), color-stop(100%,#b68d4c)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #c19e67 0%,#3d1c00 35%,#f2f2f2 58%,#b68d4c 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #c19e67 0%,#3d1c00 35%,#f2f2f2 58%,#b68d4c 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #c19e67 0%,#3d1c00 35%,#f2f2f2 58%,#b68d4c 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #c19e67 0%,#3d1c00 35%,#f2f2f2 58%,#b68d4c 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c19e67', endColorstr='#b68d4c',GradientType=0 ); /* IE6-9 */
+/* TAMBAHAN DARI BOOTSTRAP */
+.list_carousel {
+background-color: #ccc;
+margin: 0 0 30px 60px;
+width: 360px;
 }
-a{text-decoration:none;color:black;}
-#wrapper{
-	margin:0.4% 5%;box-shadow:inset 0 1px 10px black;
-	background:white;border-radius:10px;padding:20px;
-	min-height:700px;
+.list_carousel ul {
+margin: 0;
+padding: 0;
+list-style: none;
+display: block;
 }
-header{
-	margin:0px auto auto auto;width:100%;border-radius:10px;
-	height:12%;
-	/*background:#eee;border:1px black dotted;*/display:table;padding:0 5%;
+.list_carousel li {
+font-size: 40px;
+color: #999;
+text-align: center;
+background-color: #eee;
+border: 5px solid #999;
+width: 50px;
+height: 50px;
+padding: 0;
+margin: 6px;
+display: block;
+float: left;
 }
-footer{
-	/*background:#eee;border:1px black dotted;*/display:table;padding:0 5%;border-radius:10px;
-	height:20%;width:100%;
+.list_carousel.responsive {
+width: auto;
+margin-left: 0;
+}
+.clearfix {
+float: none;
+clear: both;
+}
+.prev {
+float: left;
+margin-left: 10px;
+}
+.next {
+float: right;
+margin-right: 10px;
+}
+.pager {
+float: left;
+width: 300px;
+text-align: center;
+}
+.pager a {
+margin: 0 5px;
+text-decoration: none;
+}
+.pager a.selected {
+text-decoration: underline;
+}
+.timer {
+background-color: #999;
+height: 6px;
+width: 0px;
+}
 
-}
-#logo{ /*background:#fff;border:1px gray dashed;*/height:100%;width:150px;display:table-cell;text-align:center;font-weight:bold;color:gray;}
-#menubar{/*background:#369;border:1px black dashed;*/height:100%;width:150px;display:table-cell; }
-#src{/*background:#369;border:1px black dashed;*/height:100%;width:400px;display:table-cell; }
-#cart{/*background:#369;border:1px black dashed;*/height:100%;width:300px;display:table-cell; }
-
-#services{display:table-cell;width:120px;height:100%;padding:0 15px;/*border:1px red solid;*/}
-#aboutus{display:table-cell;width:120px;height:100%;padding:0 15px;/*border:1px green solid;*/}
-#kolom{display:table-cell;border:1px blue solid;height:100%;}
-.baris{display:table;background:silver;}
-#delivopt{width:auto;height:50%;border:1px black dashed;padding:0 15px;}
-#subs{width:auto;height:50%;border:1px black dashed;padding:0 15px;}
-#payopt{width:auto;height:50%;border:1px black dashed;padding:0 15px;}
-#connus{width:auto;height:50%;border:1px black dashed;padding:0 15px;}
-
-.popup{display:none;}
-#menubar, #cart{cursor:pointer;}
-#menubar:hover #popup1{width:98%;height:100px;left:1%;top:10%;background:silver;position:absolute;border:1px white dotted;-webkit-animation: fade-in .4s, move-up .4s;-moz-animation: fade-in .4s, move-up .4s;-ms-animation: fade-in .4s, move-up .4s;display:block;border-radius:2px;box-shadow:0 2px 2px gray;}
-
-.detilfooter{font-size:10pt;margin:5px 0;}
-#cart:hover #popup2{width:98%;height:100px;left:1%;top:10%;background:silver;position:absolute;border:1px white dotted;-webkit-animation: fade-in .4s, move-up .4s;-moz-animation: fade-in .4s, move-up .4s;-ms-animation: fade-in .4s, move-up .4s;display:block;}
-
-
-@-webkit-keyframes fade-in {
-	0%   { display:none; }
-	100% { display:block; }
-}
-@-moz-keyframes fade-in {
-	0%   { display:none; }
-	100% { display:block; }
-}
-@-ms-keyframes fade-in {
-	0%   { display:none; }
-	100% { display:block; }
-}
-@-webkit-keyframes move-up {
-	from   { top: 7%; }
-	to { top: 10%; }
-}
-@-moz-keyframes move-up {
-	from   { top: 7%; }
-	to { top: 10%; }
-}
-@-ms-keyframes move-up {
-	from   { top: 7%; }
-	to { top: 10%; }
-}
+footer a{text-decoration:none;color:white;}
+footer a:hover, footer a:focus{text-shadow:0 1px 2px black;color:#ff3;}
+.modal-backdrop.fade.in:nth-child(2){z-index: 1060 !important;}
+.navbar-nav input{margin-top:3%;width:300px;}
+.navbar-nav select{margin-top:8%;}
+#cart{text-align:center;width:90%;margin:auto;}
+#cart th{background:#dff0d8;text-align:center;}
+#signin-signup{text-align:right;color:white;}
+#signin-signup button:focus{outline:none;}
+#form-signin table{margin:25px auto;text-align:right;border:none;}
+#form-signin, #form-option{display:none;margin:auto auto auto -385px;background: #25b8e1; /* Old browsers */
+background: -moz-linear-gradient(top,  #25b8e1 0%, #2989d8 51%, #25b8e1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#25b8e1), color-stop(51%,#2989d8), color-stop(100%,#25b8e1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #25b8e1 0%,#2989d8 51%,#25b8e1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #25b8e1 0%,#2989d8 51%,#25b8e1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #25b8e1 0%,#2989d8 51%,#25b8e1 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #25b8e1 0%,#2989d8 51%,#25b8e1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25b8e1', endColorstr='#25b8e1',GradientType=0 ); /* IE6-9 */
+height:200px;width:300px;position:absolute;z-index:10000;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;box-shadow:0 1px 10px black;}
+#form-signup{display:none;position:fixed;margin:0 20%;height:100%;width:50%;z-index:9999;border-radius:4px;moz-border-radius:4px;webkit-border-radius:4px;}
+#form-signup td{width:50%;}
+#form-option{margin:auto auto auto -150px;height:70px;width:150px;border-radius:none !important;}
+#form-option ul{list-style:none;}#form-option li{margin-left:-30px;}

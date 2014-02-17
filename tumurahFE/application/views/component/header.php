@@ -2,9 +2,13 @@
 	<head>
         <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/elegant.css" />
         <link rel="stylesheet" type="text/css" href="<?=base_url();?>assets/css/jquery.jscrollpane.css" media="all" />
+        
 	</head>
 	<body>
-    	<div style="float:right;margin:auto 40px auto auto;"><a href="#">Sign In</a> | <a href="#">Register</a></div>
+    	<div style="float:right;margin:auto 40px auto auto;"><a href="#" onClick="signin();">Sign In</a> | <a href="#">Register</a></div>
+        <div style="width:300px;height:200px;text-align:right;float:right;background:white;position:absolute;z-index:1000;" id="formSignin">
+        	
+        </div>
     	<header>	
         	
 			<div id="logo"><a href="<?=site_url("tumurah/index");?>">logo</a></div>

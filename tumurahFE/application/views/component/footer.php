@@ -44,7 +44,8 @@
         
         <!--  JQUERY FOR ACCORDION PAYMENT -->
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script type="text/javascript">
             var icons = {
@@ -63,6 +64,17 @@
                 $( "#accordion" ).accordion( "option", "icons", icons );
               }
             });
+			var x = 0;
+			//form signin
+			function signin(){
+				if(x===0){
+					$('#formSignin').show();
+					x=1;
+				}else{
+					$('#formSignin').hide();
+					x=0;
+				}
+			}
         </script>
         <!--  END JQUERY FOR ACCORDION PAYMENT -->
 
